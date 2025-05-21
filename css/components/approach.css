@@ -1,0 +1,66 @@
+/* Approach Section Styles */
+.approach {
+  background-color: var(--color-gray-100);
+}
+
+.approach .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-8);
+  align-items: center;
+}
+
+.approach-content h2 {
+  margin-bottom: var(--spacing-6);
+}
+
+.approach-content p {
+  margin-bottom: var(--spacing-6);
+}
+
+.approach-list {
+  list-style: none;
+}
+
+.approach-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-4);
+}
+
+.approach-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: var(--spacing-3);
+  flex-shrink: 0;
+}
+
+.approach-image {
+  width: 100%;
+  height: 400px;
+}
+
+.approach-image .image-placeholder {
+  min-height: 400px;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+  .approach .container {
+    grid-template-columns: 1fr;
+  }
+  
+  .approach-image {
+    order: -1;
+    height: 300px;
+    margin-bottom: var(--spacing-6);
+  }
+  
+  .approach-image .image-placeholder {
+    min-height: 300px;
+  }
+}
